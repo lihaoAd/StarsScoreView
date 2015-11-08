@@ -10,6 +10,7 @@ import android.graphics.Paint.Cap;
 import android.graphics.Paint.Join;
 import android.graphics.Paint.Style;
 import android.graphics.Path;
+import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -121,9 +122,9 @@ public class StarsScoreView extends View {
 		super.onDraw(canvas);
 		if (maxProgress == 0)
 			return;
-
 		float itemProgress = maxProgress / mMaxStar; // 每个星星多少分
 		int num = (int) (mProgress / itemProgress); // 需要完整星星多少个
+		canvas.translate(getPaddingLeft(), getPaddingTop());
 		// 需要多少个完整的星星
 		for (int i = 0; i < num; i++) {
 			canvas.save();
