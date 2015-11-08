@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="StarsScoreView">
+        <attr name="color" format="color|reference" />
+        <attr name="radius" format="dimension" />
+        <attr name="stroke" format="dimension" />
+        <attr name="space" format="dimension" />
+        <attr name="maxStar" format="integer" />
+        <attr name="maxProgress" format="integer" />
+    </declare-styleable>
+
+</resources>
